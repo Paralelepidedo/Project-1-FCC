@@ -1,0 +1,79 @@
+body {
+background-image: linear-gradient(65deg, rgb(0,10,34)25%, rgb(34, 96, 133)60%);
+}
+label{
+    display: block;
+    font-family: sans-serif;
+    color: white;
+}
+form {
+    width: 60vw;
+      max-width: 500px;
+      min-width: 300px;
+      margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  h1, p, h2 {
+    margin: 1em auto;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+  }
+  p {
+    max-width:40%;
+  }
+  .checos{
+    display: inline-block;
+    text-align: left;
+    width: auto;
+
+  }
+    .opcionH{
+        display: inline-block;
+        margin-top: 5px;
+    }
+  input[type="submit"] {
+    display: block;
+    color: white;
+    width: 2rem;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    background-color: rgb(241, 78, 78);
+    border: 0;
+    min-width: 140px;
+
+  }
+  .icons {              /* resize de imagenes del footer*/
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    margin-top: 5px;
+  }
+  .ultimo {
+    text-align: center; /* Alinenado el footer*/
+  }
+  footer{
+    background-color: rgb(47, 51, 59);
+  }
+  legend{
+    color: white;
+    font-family: sans-serif;
+    
+  }
+  legend {
+    margin-top: 5px;
+  }
+  textarea{
+    margin-top: 10px;
+  }
+  a{
+    color: red;
+  }
+  .gen{
+    margin-top: 5px;
+  }
+  .genero{
+    margin-left: 15%;
+  }

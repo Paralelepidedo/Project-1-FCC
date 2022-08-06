@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encuesta de Satisfacción</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Encuesta de satisfacción del CIP</h1>
+        <main>
+            <p id="description">Su opinión acerca de este curso nos brinda una importante ayuda para mejorar nuestra forma de diseñar y transmitir los cursos para que sean más comodos e intuitivos</p>
+            <form id="survey-form">
+                <section>       <!--Datos del cursante-->
+                    <fieldset>
+                        <label id="name-label">Nombre:
+                            <input type="text" id="name" placeholder="Ej.: John Doe" required>
+                        </label>
+                        <label id="email-label">Email:
+                            <input type="email" id="email" placeholder="Ej.:johndoe@c-team.com.ar" required>
+                        </label>
+                        <label id="number-label">Edad:
+                            <input type="number" id="number" required maxlength="3" max="120" min="6" placeholder="Ej.: 18">    
+                        </label>
+                        
+                        <label class="gen">Género
+                            <label class="genero">
+                                <input type="radio" name="sexo" value="femenino" checked>Femenino
+                            </label>
+                            <label class="genero">
+                                <input type="radio" name="sexo" value="masculino">Masculino
+                            </label>
+                            <label class="genero">
+                                <input type="radio" name="sexo" value="otro">Otro
+                            </label>
+                        </label>
+
+                    </fieldset>
+                </section>
+                <section>       <!--Información adicional-->
+                    <fieldset>  <!--intereses del cursante-->
+                        <legend>Intereses y conocimientos</legend>
+                        <div class="checos">
+                            
+                            <label><input type="checkbox" value="webdesign" class="inline">Diseño Web</label>
+                            <label><input type="checkbox" value="apps" class="inline">Apps</label>
+                            <label><input type="checkbox" value="networking" class="inline">Networking</label>
+                            <label><input type="checkbox" value="soporte" class="inline">Soporte Técnico</label>
+                            <label><input type="checkbox" value="comm" class="inline">Comunicaciones</label>
+                        </div>
+                        <div class="checos">
+                            <label><input type="checkbox" value="automatic" class="inline">Automatización</label>
+                            <label><input type="checkbox" value="robotics" class="inline">Robotica</label>
+                            <label><input type="checkbox" value="program" class="inline">Programación</label>
+                            <label><input type="checkbox" value="iot" class="inline">IoT</label>
+                            <label><input type="checkbox" value="servers" class="inline">Servidores</label>
+                        </div>
+                        <div class="checos">
+                            <label class="derecho"><input type="checkbox" value="linux" class="inline">Linux</label>
+                            <label class="derecho"><input type="checkbox" value="media" class="inline">Multimedia</label>
+                            <label class="derecho"><input type="checkbox" value="forum" class="inline">Foros</label>
+                            <label class="derecho"><input type="checkbox" value="segelec" class="inline">Seguridad Electrónica</label>
+                            <label class="derecho"><input type="checkbox" value="tech" class="inline">Tecnología</label>
+                        </div>
+                    </fieldset>
+                </section>
+                <section>       <!--Información sobre el curso-->
+                    <fieldset>
+                        <legend>Acerca del curso</legend>
+                        <label for="dropdown">Estado actual:
+                            <select id="dropdown" required aria-placeholder="seleccion">
+                                <option value="" hidden>Seleccione</option>
+                                <option value="1">Cursando</option>
+                                <option value="2">Finalizado</option>
+                            </select>
+                            <div>
+                                <legend name="definicion">¿Como definirías el curso?</legend>
+                                <label class="opcionH">
+                                    <input type="radio" name="clases" value="aburrido" >Aburrido
+                                </label>
+                                <label class="opcionH">
+                                    <input type="radio" name="clases" value="mediocre">Mediocre
+                                </label>
+                                <label class="opcionH">
+                                    <input type="radio" name="clases" value="interesante">Interesante
+                                </label>
+                                <label class="opcionH">
+                                    <input type="radio" name="clases" value="productivo">Productivo
+                                </label>
+                                <label class="opcionH">
+                                    <input type="radio" name="clases" value="excelente" checked>Excelente
+                                </label>
+                            </div>
+                        </label>
+                    </fieldset>
+                </section>
+                
+                
+                <h2>Nos gustaria que nos dejaras tu comentario
+                    <textarea name="comentarios" id="comments" cols="50" rows="8" maxlength="400" placeholder="Max. 400 caracteres. Ej.: Me encanto el streaming del curso..."></textarea>
+                </h2>
+                
+                <input type="submit" value="ENVIAR" id="submit">
+            </form>
+            </main>
+    </body>
+    <footer>
+        <div class="ultimo">
+            <label name="derechos">2019 © <a href="https://www.c-team.com.ar/" target="_blank">C-Team</a> - Designed by Nicolás</label>
+            <a href="https://telegram.me/cteamventas" target="_blank"><img src="telegram.png" alt="Logo de Telegram" class="icons"></a>
+            <a href="https://web.whatsapp.com/?phone=5491169731562&text=" target="_blank"><img src="whatsapp.png" alt="Logo de Whatsapp"class="icons"></a>
+            <a href="mailto:info@c-team.com.ar"><img src="carta.png" alt="Correo" class="icons"></a>
+        </div>
+    </footer>
+</html>
